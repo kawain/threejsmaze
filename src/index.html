@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>maze</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+        }
+
+        canvas {
+            display: block;
+        }
+
+        #info {
+            color: antiquewhite;
+            position: absolute;
+            top: 10px;
+            width: 100%;
+            text-align: center;
+            z-index: 100;
+            display: block;
+        }
+
+        .btn {
+            margin: 20px auto;
+            max-width: 180px;
+            text-align: center;
+            background-color: #9ec34b;
+            font-size: 16px;
+            color: rgb(31, 17, 17);
+            font-weight: bold;
+            padding: 8px 16px;
+            border-radius: 4px;
+        }
+
+        .btn:hover {
+            opacity: 0.8;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="info">
+        <h1 id="level">level 0</h1>
+        Move forward ↑ | Turn left ← | Turn right →
+        <div>
+            <button id="try_again" class="btn" style="display: none;">once again</button>
+        </div>
+    </div>
+    <canvas id="maze_canvas"></canvas>
+    <script src="./index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "threejsmaze",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "npx parcel src/index.html --open --no-source-maps",
+    "build": "npx parcel build src/index.html --no-source-maps --public-url ./ -d docs"
+  },
+  "dependencies": {
+    "three": "^0.119.1"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.10"
+  }
+}
