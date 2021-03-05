@@ -6,7 +6,7 @@
     "build": "npx parcel build src/index.html --no-source-maps --public-url ./ -d docs"
   },
   "dependencies": {
-    "three": "^0.119.1"
+    "three": ">=0.125.0"
   },
   "devDependencies": {
     "cssnano": "^4.1.10"
